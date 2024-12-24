@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2ogpcccl02oj"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_huu47"]
+script/source = "using Godot;
+using System;
+
+public partial class GameStateSCeneNode : Node
+{
+	public override void _Ready(){
+		GD.Print(\"READSAD\");
+		base._Ready();
+	}
+}
+"
+
+[node name="GameStateSCeneNode" type="Node"]
+script = SubResource("CSharpScript_huu47")

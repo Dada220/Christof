@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgva158flo26c"]
+
+[ext_resource type="Script" path="res://Source/Enemies/BossEnemy.cs" id="1_lhfj7"]
+[ext_resource type="Texture2D" uid="uid://etddvxj6io46" path="res://assets/Enemies/BossEnemy.png" id="2_e8p0n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e5ny2"]
+
+[node name="BossEnemy" type="CharacterBody2D"]
+script = ExtResource("1_lhfj7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_e8p0n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_e5ny2")

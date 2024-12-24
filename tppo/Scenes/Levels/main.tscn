@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://dbp8unr8shjmc"]
+
+[ext_resource type="PackedScene" uid="uid://dft08ojnwj5h5" path="res://Scenes/Levels/Level.tscn" id="1_f3tyc"]
+[ext_resource type="PackedScene" uid="uid://b8w4sjes2oxxr" path="res://Scenes/Player.tscn" id="2_vjpcb"]
+[ext_resource type="PackedScene" uid="uid://dxg8egyafggwr" path="res://Scenes/Enemies/Enemy.tscn" id="3_ig52e"]
+[ext_resource type="PackedScene" uid="uid://bgva158flo26c" path="res://Scenes/Enemies/BossEnemy.tscn" id="4_h7oh1"]
+[ext_resource type="PackedScene" uid="uid://0vcpqn10y86" path="res://Scenes/Enemies/AIEnemy.tscn" id="5_pluxd"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Level" parent="." instance=ExtResource("1_f3tyc")]
+z_index = 0
+position = Vector2(108, 95)
+
+[node name="Player" parent="." instance=ExtResource("2_vjpcb")]
+position = Vector2(-414, -93)
+rotation = 1.52982
+
+[node name="Enemy" parent="." instance=ExtResource("3_ig52e")]
+position = Vector2(-284, -46)
+rotation = 2.54418
+
+[node name="Enemy3" parent="." instance=ExtResource("3_ig52e")]
+position = Vector2(-305, -105)
+rotation = 2.74214
+
+[node name="Enemy4" parent="." instance=ExtResource("3_ig52e")]
+position = Vector2(-97, -127)
+rotation = 2.54418
+
+[node name="Enemy5" parent="." instance=ExtResource("3_ig52e")]
+position = Vector2(-337, 7)
+rotation = 2.54418
+
+[node name="Enemy6" parent="." instance=ExtResource("3_ig52e")]
+position = Vector2(-109, -65)
+rotation = 2.54418
+
+[node name="Enemy7" parent="." instance=ExtResource("3_ig52e")]
+position = Vector2(-72, -66)
+rotation = 2.54418
+
+[node name="BossEnemy" parent="." instance=ExtResource("4_h7oh1")]
+position = Vector2(-223, -56)
+rotation = 3.11358
+
+[node name="AIEnemy" parent="." instance=ExtResource("5_pluxd")]
+position = Vector2(-445, -26)

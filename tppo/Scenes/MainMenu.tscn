@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://boyqtrxgfbw6q"]
+
+[ext_resource type="Script" path="res://Source/MainMenu/MainMenu.cs" id="1_3vwjm"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3vwjm")
+
+[node name="StartGame" type="Button" parent="."]
+layout_mode = 0
+offset_left = 541.0
+offset_top = 134.0
+offset_right = 646.0
+offset_bottom = 165.0
+text = "StartGame"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 556.0
+offset_top = 217.0
+offset_right = 638.0
+offset_bottom = 248.0
+text = "ExitGame"
+
+[connection signal="pressed" from="StartGame" to="." method="_on_StartGame_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_ExitGame_pressed"]
